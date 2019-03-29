@@ -9,11 +9,13 @@ Vue.use(Vuex)
  */
 
 import { layout } from './layout-model'
+import { news } from './news-model'
 
 export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
-      layout
+      layout,
+      news
     },
 
     // enable strict mode (adds overhead!)

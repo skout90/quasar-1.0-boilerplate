@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export default ({ app, router, Vue }) => {
   axios.defaults.baseURL = process.env.API
-  axios.defaults.withCredentials = true
+  // axios.defaults.withCredentials = true
   axios.defaults.headers.common['Content-Type'] = 'application/json'
 
   /**
@@ -14,3 +14,5 @@ export default ({ app, router, Vue }) => {
 
   Vue.prototype.$axios = axios
 }
+
+export { axios }

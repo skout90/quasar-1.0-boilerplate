@@ -1,19 +1,26 @@
-const layoutState = {
-  isDrawerOpen: false
+import { stateHelper, mutationHelper, getterHelper } from './helper/model-helper'
+
+const state = {
+  ...stateHelper,
+  isDrawerOpen: false,
 }
 
-const layoutGetters = {
+const getters = {
+  ...getterHelper,
   getIsDrawerOpen: state => state.isDrawerOpen
 }
 
-const layoutMutations = {
+const mutations = {
+  ...mutationHelper,
   SET_IS_DRAWER_OPEN: (state, payload) => state.isDrawerOpen = payload
 }
 
+const actions = {}
+
 export const layout = {
-  state: layoutState,
-  getters: layoutGetters,
-  mutations: layoutMutations,
-  actions: {},
+  state,
+  getters,
+  mutations,
+  actions,
   namespaced: true
 }
