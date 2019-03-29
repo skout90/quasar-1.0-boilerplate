@@ -44,10 +44,11 @@ module.exports = {
     'eol-last': 'off',
     "no-undef": 1,
     "no-console": 'off',
-    "no-unused-vars": 2,
+    "no-unused-vars": process.env.NODE_ENV === 'production' ? 'on' : 'off',
+    "no-return-assign": 'off',
+    'space-before-function-paren': 1,
 
     'import/first': 'off',
-    'import/named': 'error',
     'import/namespace': 'error',
     'import/default': 'error',
     'import/export': 'error',
