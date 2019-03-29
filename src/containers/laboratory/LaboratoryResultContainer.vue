@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-lg">
+  <div>
     <div class="row items-center">
       <div class="col-4">
         <q-badge color="black">TEXT</q-badge>
@@ -29,30 +29,22 @@
         <q-badge color="red">{{computedNumberResult}}</q-badge>
       </div>
     </div>
-    <div class="row q-mt-xl">
-      <div v-for="(news, index) in getNews" class="col-12" :key="index">
-        <q-badge color="blue">{{news.user}}</q-badge><br />
-        {{news.title}}<br />
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex'
-
+// watch, computed의 차이는 아래 포스팅 참조
+// https://skout90.github.io/2018/01/24/Vue/1.1.Computed-VS-Watch/
 export default {
-  name: 'Laboratory',
+  name: 'LaboratoryResultContainer',
   created () {
     setTimeout(() => { this.textInput = 'life is beautiful.' }, 3000)
-
-    this.selectNews()
+    setTimeout(() => { this.numberInput = 2 }, 4000)
   },
   data () {
     return {
       textInput: '',
-      numberInput: 0,
-      someNumber: 2
+      numberInput: 0
     }
   },
   computed: {
@@ -63,10 +55,7 @@ export default {
     computedNumberResult () {
       console.log('computed... numberInput')
       return this.numberInput * 2
-    },
-    ...mapGetters({
-      getNews: 'news/getNews'
-    })
+    }
   },
   watch: {
     textInput () {
@@ -77,11 +66,6 @@ export default {
       console.log('watch... numberInput')
       return this.numberInput
     }
-  },
-  methods: {
-    ...mapActions({
-      selectNews: 'news/selectNews'
-    })
   }
 }
 </script>
