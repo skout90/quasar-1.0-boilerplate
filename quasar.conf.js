@@ -1,4 +1,6 @@
 // Configuration for your app
+const env = require('./env')
+const path = require('path')
 
 module.exports = function (ctx) {
   return {
@@ -69,6 +71,20 @@ module.exports = function (ctx) {
           loader: 'eslint-loader',
           exclude: /node_modules/
         })
+
+        cfg.resolve.alias = {
+          ...cfg.resolve.alias,
+          src: path.resolve(__dirname, './src'),
+          components: path.resolve(__dirname, './src/components'),
+          pages: path.resolve(__dirname, './src/pages'),
+          layouts: path.resolve(__dirname, './src/layouts'),
+          common: path.resolve(__dirname, './src/common'),
+          store: path.resolve(__dirname, './src/store'),
+        }
+      },
+
+      env: {
+        API: JSON.stringify(env.BASE_API_URL)
       }
     },
 
