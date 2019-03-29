@@ -28,7 +28,6 @@ module.exports = function (ctx) {
 
     framework: {
       // all: true, // --- includes everything; for dev only!
-
       components: [
         'QLayout',
         'QHeader',
@@ -42,7 +41,9 @@ module.exports = function (ctx) {
         'QList',
         'QItem',
         'QItemSection',
-        'QItemLabel'
+        'QItemLabel',
+        'QInput',
+        'QBadge'
       ],
 
       directives: [
