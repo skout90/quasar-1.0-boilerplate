@@ -7,6 +7,9 @@
   "author": "Junho Nam <nowonlyhere@gmail.com>",
   "private": true,
   "scripts": {
+    "dev": "quasar dev -t ios",
+    "build:prod": "NODE_ENV=production ./node_modules/.bin/quasar build",
+    "build:test": "NODE_ENV=test ./node_modules/.bin/quasar build",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0"
   },
