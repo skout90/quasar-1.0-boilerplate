@@ -37,6 +37,15 @@ module.exports = {
     'arrow-parens': 'off',
     'one-var': 'off',
 
+    // allow debugger during development
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'semi': 'off',
+    'comma-dangle': 'off',
+    'eol-last': 'off',
+    "no-undef": 1,
+    "no-console": 'off',
+    "no-unused-vars": 2,
+
     'import/first': 'off',
     'import/named': 'error',
     'import/namespace': 'error',
@@ -45,11 +54,7 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': 'off',
+    "import/no-named-as-default-member": 'off',
     'prefer-promise-reject-errors': 'off',
-
-    // allow console.log during development only
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    // allow debugger during development only
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
 }
