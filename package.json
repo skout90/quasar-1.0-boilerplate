@@ -16,6 +16,9 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "axios": "^0.18.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "partial-js": "^1.1.8",
     "quasar": "^1.0.0-beta.0"
   },
   "devDependencies": {
