@@ -8,6 +8,8 @@
   "private": true,
   "scripts": {
     "dev": "quasar dev -t ios",
+    "dev:and": "quasar dev -m cordova -T android",
+    "dev:ios": "quasar dev -m cordova -T ios",
     "build:prod": "NODE_ENV=production ./node_modules/.bin/quasar build",
     "build:test": "NODE_ENV=test ./node_modules/.bin/quasar build",
     "lint": "eslint --ext .js,.vue src",
