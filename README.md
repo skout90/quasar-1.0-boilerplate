@@ -27,3 +27,9 @@ https://github.com/standard/standard
 
 ## Sample api url
 https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md
+
+## trouble shoot
+
+in build, cordova-plugin-fcm Error: Invalid data, chunk must be a string or buffer, not object 
+
+https://github.com/fechanique/cordova-plugin-fcm/issues/501#issuecomment-399673827

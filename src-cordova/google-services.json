@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "56515905477",
+    "firebase_url": "https://quasar-boilerplate.firebaseio.com",
+    "project_id": "quasar-boilerplate",
+    "storage_bucket": "quasar-boilerplate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56515905477:android:5d7e26c46b9c1aa6",
+        "android_client_info": {
+          "package_name": "org.cordova.quasar.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56515905477-s82cqie4s5ec1j2st43pr17math91q17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_QlTadUkTdw75p6ASP6mgOu1K0BWM3B4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
