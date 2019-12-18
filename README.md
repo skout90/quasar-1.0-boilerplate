@@ -9,6 +9,10 @@ Node.js >= 8.9.0 is required.
   
 > npm install -g @quasar/cli
 
+> npm ci
+
+> npm run dev
+
 ## build cordova
 
 https://v1.quasar-framework.org/quasar-cli/developing-mobile-apps/preparation
