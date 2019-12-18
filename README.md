@@ -9,7 +9,7 @@ Node.js >= 8.9.0 is required.
   
 > npm install -g @quasar/cli
 
-> npm ci
+> npm i
 
 > npm run dev
 
